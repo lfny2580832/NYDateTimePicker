@@ -19,11 +19,24 @@
                     <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Lf-YS-7MX">
+                    <rect key="frame" x="0.0" y="64" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.86231831775327661" green="0.86122419729204447" blue="0.88033575646167561" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Jqg-9L-f2R"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="5DU-4l-R6o" secondAttribute="bottom" id="5ZO-VG-pJh"/>
+                <constraint firstItem="5Lf-YS-7MX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="6Be-5Z-R1r"/>
                 <constraint firstItem="5DU-4l-R6o" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Fq5-XM-VRc"/>
+                <constraint firstItem="5Lf-YS-7MX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Nlk-0f-3g6"/>
+                <constraint firstAttribute="trailing" secondItem="5Lf-YS-7MX" secondAttribute="trailing" id="Nls-ei-Dyd"/>
                 <constraint firstAttribute="trailing" secondItem="5DU-4l-R6o" secondAttribute="trailing" id="a2K-3x-IGn"/>
                 <constraint firstItem="5DU-4l-R6o" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rMu-Mv-O9d"/>
             </constraints>

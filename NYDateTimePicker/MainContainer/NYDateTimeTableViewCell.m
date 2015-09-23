@@ -51,17 +51,12 @@
 }
 
 #pragma mark Animation Methods
+//模拟tableviewcell点击动画
 -(void)grayViewAnimation{
     self.grayView.backgroundColor = [UIColor colorWithRed:200.f/255 green:200.f/255 blue:200.f/255 alpha:1.0f];
     [UIView animateWithDuration:0.2
                      animations:^{
-                         [self.grayView setAlpha:0];
-                     }
-                     completion:^(BOOL finished){
-                         if (finished) {
-                             self.grayView.backgroundColor = [UIColor clearColor];
-                             [self.grayView setAlpha:1];
-                         }
+                         self.grayView.backgroundColor = [UIColor clearColor];
                      }];
 }
 
@@ -140,7 +135,6 @@
         case 0: {
             NSDateComponents *components = [self.calendar components:NSCalendarUnitYear
                                                             fromDate:self.pickerStartDate];
-            NSLog(@"shit %@",self.pickerStartDate);
             NSString *currentYear = [NSString stringWithFormat:@"%ld年", [components year] + row];
             [dateLabel setText:currentYear];
             dateLabel.textAlignment = NSTextAlignmentCenter;
