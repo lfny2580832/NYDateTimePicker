@@ -27,8 +27,8 @@
 
 @protocol NYDateTimeDelegate <NSObject>
 //更改高度
--(void)oneDateTimeCellHeightChange:(BOOL)ifChosen;
+-(void)oneTimeCellHeightChange:(BOOL)ifChosen;
 //更改内容
--(void)oneDateTimePickerValueChanged:(NSString *)dateString;
+-(void)oneTimePickerValueChanged:(NSString *)dateString;
 
 @end

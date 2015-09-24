@@ -26,7 +26,7 @@
 #pragma mark - UIView Methods
 - (void)awakeFromNib {
     [super awakeFromNib];
-    self.ifChosen = NO;
+    self.datePickerView.hidden = YES;
     self.datePickerView.delegate = self;
     self.datePickerView.dataSource = self;
 }
@@ -62,6 +62,7 @@
 
 //渐显
 -(void)showPickerViewAnimation{
+    [self grayViewAnimation];
     self.dateTimeLabel.textColor = [UIColor redColor];
     self.datePickerView.hidden = NO;
     [self.datePickerView setAlpha:0];
@@ -103,14 +104,13 @@
 
 #pragma mark IBAction Methods
 - (IBAction)setDateButtonClicked:(id)sender {
+    [self.delegate oneTimeCellHeightChange:self.ifChosen];
     if (!self.ifChosen) {
         [self pickerViewSetDate:self.selectedDate];
-        [self.delegate oneDateTimeCellHeightChange:self.ifChosen];
         self.ifChosen = !self.ifChosen;
         [self showPickerViewAnimation];
         [self grayViewAnimation];
     }else{
-        [self.delegate oneDateTimeCellHeightChange:self.ifChosen];
         self.ifChosen = !self.ifChosen;
         [self fadePickerViewAnimation];
         [self grayViewAnimation];
@@ -127,7 +127,6 @@
     if (!dateLabel) {
         dateLabel = [[UILabel alloc] init];
         [dateLabel setFont:[UIFont systemFontOfSize:17]];
-        [dateLabel setBackgroundColor:[UIColor clearColor]];
     }
     
     switch (component) {
@@ -212,7 +211,7 @@
     self.selectedDate = [self.calendar dateFromComponents:self.selectedComponents];
     NSString *selectedDateString = [self.myFomatter stringFromDate:self.selectedDate];
     self.dateTimeLabel.text = selectedDateString;
-    [self.delegate oneDateTimePickerValueChanged:selectedDateString];
+    [self.delegate oneTimePickerValueChanged:selectedDateString];
 }
 
 #pragma mark - UIPickerViewDelegate Methods

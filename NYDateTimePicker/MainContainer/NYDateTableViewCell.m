@@ -19,7 +19,7 @@
 #pragma mark - UIView Methods
 - (void)awakeFromNib {
     [super awakeFromNib];
-    self.ifChosen = NO;
+    self.datePicker.hidden = YES;
 }
 
 -(void)pickerViewSetDate:(NSDate *)date{
@@ -27,13 +27,9 @@
 }
 
 #pragma mark Private Methods
--(void)setFomatter{
+-(void)reloadWithDate:(NSString *)dateString{
     self.myFomatter = [[NSDateFormatter alloc]init];
     [self.myFomatter setDateFormat:@"yyyy年MM月dd日"];
-}
-
--(void)reloadWithDate:(NSString *)dateString{
-    [self setFomatter];
     self.dateLabel.text = dateString;
     self.chosenDate = [self.myFomatter dateFromString:dateString];
 }
@@ -81,14 +77,13 @@
 }
 
 - (IBAction)setDateButtonClicked:(id)sender {
+    [self.delegate oneDateCellHeightChange:self.ifChosen];
     if (self.ifChosen == NO) {
         [self.datePicker setDate:self.chosenDate];
-        [self.delegate oneDateCellHeightChange:self.ifChosen];
         self.ifChosen = YES;
         [self showPickerViewAnimation];
         [self grayViewAnimation];
     }else{
-        [self.delegate oneDateCellHeightChange:self.ifChosen];
         self.ifChosen = NO;
         [self fadePickerViewAnimation];
         [self grayViewAnimation];
