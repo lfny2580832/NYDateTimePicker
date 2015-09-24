@@ -53,8 +53,8 @@
 #pragma mark Animation Methods
 //模拟tableviewcell点击动画
 -(void)grayViewAnimation{
-    self.grayView.backgroundColor = [UIColor colorWithRed:200.f/255 green:200.f/255 blue:200.f/255 alpha:1.0f];
-    [UIView animateWithDuration:0.2
+    self.grayView.backgroundColor = [UIColor colorWithRed:208.f/255 green:208.f/255 blue:208.f/255 alpha:1.0f];
+    [UIView animateWithDuration:0.4
                      animations:^{
                          self.grayView.backgroundColor = [UIColor clearColor];
                      }];
@@ -68,8 +68,7 @@
     [UIView animateWithDuration:0.2
                      animations:^{
                          [self.datePickerView setAlpha:1];
-                     }
-                     completion:nil];
+                     }];
 }
 
 //渐隐

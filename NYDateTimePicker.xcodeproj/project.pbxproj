@@ -18,6 +18,8 @@
 		4A1D1D781BB1AC62009AFFD4 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A1D1D761BB1AC62009AFFD4 /* MainViewController.xib */; };
 		4A1D1D7C1BB2358A009AFFD4 /* NYDateTimeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1D1D7A1BB2358A009AFFD4 /* NYDateTimeTableViewCell.m */; };
 		4A1D1D7D1BB2358A009AFFD4 /* NYDateTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A1D1D7B1BB2358A009AFFD4 /* NYDateTimeTableViewCell.xib */; };
+		4A1D1D811BB38C0B009AFFD4 /* NYDateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1D1D7F1BB38C0B009AFFD4 /* NYDateTableViewCell.m */; };
+		4A1D1D821BB38C0B009AFFD4 /* NYDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A1D1D801BB38C0B009AFFD4 /* NYDateTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,9 @@
 		4A1D1D791BB2358A009AFFD4 /* NYDateTimeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYDateTimeTableViewCell.h; sourceTree = "<group>"; };
 		4A1D1D7A1BB2358A009AFFD4 /* NYDateTimeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYDateTimeTableViewCell.m; sourceTree = "<group>"; };
 		4A1D1D7B1BB2358A009AFFD4 /* NYDateTimeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NYDateTimeTableViewCell.xib; sourceTree = "<group>"; };
+		4A1D1D7E1BB38C0B009AFFD4 /* NYDateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYDateTableViewCell.h; sourceTree = "<group>"; };
+		4A1D1D7F1BB38C0B009AFFD4 /* NYDateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYDateTableViewCell.m; sourceTree = "<group>"; };
+		4A1D1D801BB38C0B009AFFD4 /* NYDateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NYDateTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +144,9 @@
 				4A1D1D791BB2358A009AFFD4 /* NYDateTimeTableViewCell.h */,
 				4A1D1D7A1BB2358A009AFFD4 /* NYDateTimeTableViewCell.m */,
 				4A1D1D7B1BB2358A009AFFD4 /* NYDateTimeTableViewCell.xib */,
+				4A1D1D7E1BB38C0B009AFFD4 /* NYDateTableViewCell.h */,
+				4A1D1D7F1BB38C0B009AFFD4 /* NYDateTableViewCell.m */,
+				4A1D1D801BB38C0B009AFFD4 /* NYDateTableViewCell.xib */,
 			);
 			path = MainContainer;
 			sourceTree = "<group>";
@@ -225,6 +233,7 @@
 			files = (
 				4A1D1D581BB1ABB0009AFFD4 /* Main.storyboard in Resources */,
 				4A1D1D5D1BB1ABB0009AFFD4 /* LaunchScreen.xib in Resources */,
+				4A1D1D821BB38C0B009AFFD4 /* NYDateTableViewCell.xib in Resources */,
 				4A1D1D5A1BB1ABB0009AFFD4 /* Images.xcassets in Resources */,
 				4A1D1D781BB1AC62009AFFD4 /* MainViewController.xib in Resources */,
 				4A1D1D7D1BB2358A009AFFD4 /* NYDateTimeTableViewCell.xib in Resources */,
@@ -247,6 +256,7 @@
 			files = (
 				4A1D1D551BB1ABB0009AFFD4 /* ViewController.m in Sources */,
 				4A1D1D521BB1ABB0009AFFD4 /* AppDelegate.m in Sources */,
+				4A1D1D811BB38C0B009AFFD4 /* NYDateTableViewCell.m in Sources */,
 				4A1D1D4F1BB1ABB0009AFFD4 /* main.m in Sources */,
 				4A1D1D771BB1AC62009AFFD4 /* MainViewController.m in Sources */,
 				4A1D1D7C1BB2358A009AFFD4 /* NYDateTimeTableViewCell.m in Sources */,
@@ -444,6 +454,7 @@
 				4A1D1D6E1BB1ABB0009AFFD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A1D1D6F1BB1ABB0009AFFD4 /* Build configuration list for PBXNativeTarget "NYDateTimePickerTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +463,7 @@
 				4A1D1D711BB1ABB0009AFFD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
